@@ -1,0 +1,6 @@
+{
+  "scripts": ["script.js"],
+  "styles": ["style.css"],
+  "markup": "index.html",
+  "layout":"vertical-split"
+}

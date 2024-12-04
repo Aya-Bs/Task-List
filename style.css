@@ -1,0 +1,120 @@
+*,  
+*:before,  
+*:after{  
+padding: 0;  
+margin: 0;  
+box-sizing: border-box;  
+}  
+body{  
+    height: 100vh;  
+    background: #F2DADF;
+}
+#head-text{  
+    margin-top: 50px;  
+    margin-left: 10px;   
+    font-family: sans-serif;  
+    color : #000435;
+}
+
+#newtask{
+    position: relative;
+    padding: 30px 20px;
+    }
+    #newtask input{
+    width: 75%;
+    height: 45px; padding: 12px;
+    color: #111111; font-weight: 500;
+    position: relative;
+    border-radius: 5px;
+    font-family: sans-serif; font-size: 15px;
+    border: 2px solid #000435;
+    }
+
+    #newtask input:focus{
+    outline: none;
+    border-color: #0075EC;
+    }
+    #newtask button{
+    
+    position: relative;
+    float: right;
+    font-weight: 500;
+    font-size: 16px;
+    background-color: #000435;
+    border: none; color:#FFFFFF;
+    cursor: pointer;
+    outline: none;
+    width: 20%;
+    height: 45px;
+    border-radius: 5px; font-family: sans-serif;
+    }
+    .tasks{
+    position: absolute;
+    border-radius: 0px;
+    width: 100%;
+    /* position: relative; */
+    background-color: #FFFFFF;
+    padding: 30px 20px;
+    margin-top: 0px;
+    justify-content: space-between;
+    }
+.container{ 
+    width: 40%; 
+    top: 30%; 
+    left: 50%; 
+    background: white; 
+    border-radius: 1px; 
+    min-width: 450px; 
+    position: absolute; 
+    min-height: 100px; 
+    transform: translate(-50%,-50%); 
+    }
+.tasks.overflow{  
+    overflow-y: auto;  
+    max-height: 300px;  
+    }  
+    .tasks::-webkit-scrollbar {  
+        width: 10px;  
+        }  
+        .tasks::-webkit-scrollbar-track {  
+        background: #BAE6FF;  
+        border-radius: 25px;  
+        }  
+        .tasks::-webkit-scrollbar-thumb { 
+            background: #0D75EC;  
+            border-radius: 25px;  
+            } 
+.task {
+    display: flex; /* Align items in a row */
+    align-items: center; /* Vertically center items */
+    justify-content: space-between; /* Add space between task text and delete icon */
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin: 5px 0;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.task label {
+    display: flex; /* Arrange checkbox and task text in a row */
+    align-items: center; /* Vertically align them */
+    gap: 10px; /* Add some space between checkbox and text */
+    flex-grow: 1; /* Ensure the label takes up available space */
+}
+
+.task p {
+    margin: 0; /* Remove default margins from the paragraph */
+}
+
+.delete {
+    cursor: pointer; /* Change cursor to pointer for delete icon */
+    color: #ff0000; /* Add red color for delete icon */
+    margin-left: 10px; /* Add space between task text and delete icon */
+    display: flex; /* Ensure it stays aligned */
+    align-items: center; /* Vertically center align */
+}
+.task label p.checked{
+    text-decoration: line-through;
+    color: #ccc;
+}
+
